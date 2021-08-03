@@ -4,13 +4,13 @@ from time import sleep
 import emoji
 
 date = datetime.date
-print('=-=' * 9)
+print('=-=' * 12)
 print('SORTEIO SIPAT - ' + str(date.today()) + "!" + 5 * emoji.emojize(':trophy:', use_aliases=True))
-print('=-=' * 9)
+print('=-=' * 12)
 controle = bool(1)
 opcoes = [1,2]
 
-file = open('ListaDePresenca-2021-08-02.txt')
+file = open('ListaDePresenca-2021-08-03.txt')
 lista = file.readlines()
 
 while(controle):
@@ -34,6 +34,7 @@ while(controle):
         print('\n\n')
         print('Lá vai... ' + emoji.emojize(':laughing:', use_aliases=True))
         print('\n\n')
+        sleep(2)
         print('O ganhador(a) é ' + resultado + 'CONGRATS!!! ' + 5 * emoji.emojize(':clap:', use_aliases=True))
         print('\n\n')
         break
